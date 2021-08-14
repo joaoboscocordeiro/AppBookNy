@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">App Book Ny</string>
+    <string name="app_name">AppBookNy</string>
+
+    <!-- Books Activity -->
+    <string name="books_title">Books</string>
+
 </resources>
