@@ -2,6 +2,7 @@ package br.com.multsoftware.v1.appbookny.presentation.books
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.com.multsoftware.v1.appbookny.R
@@ -22,6 +23,9 @@ class BooksActivity : AppCompatActivity() {
             setHasFixedSize(true)
             adapter = BooksAdapter(getBooks())
         }
+
+        val viewModel: BooksViewModel = ViewModelProviders.of(this).get(BooksViewModel::class.java)
+
     }
 
     // Moke
