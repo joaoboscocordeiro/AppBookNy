@@ -30,7 +30,11 @@ class BooksActivity : AppCompatActivity() {
             Book("Title 01", "Author 01"),
             Book("Title 02", "Author 02"),
             Book("Title 03", "Author 03"),
-            Book("Title 04", "Author 04")
+            Book("Title 04", "Author 04"),
+            Book("Title 05", "Author 05"),
+            Book("Title 06", "Author 06"),
+            Book("Title 07", "Author 07"),
+            Book("Title 08", "Author 08")
         )
     }
 }
