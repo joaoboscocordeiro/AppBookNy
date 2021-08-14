@@ -24,7 +24,7 @@ class BooksAdapter(
     override fun onBindViewHolder(holder: BooksViewHolder, position: Int) =
         holder.bindView(books[position])
 
-    override fun getItemCount(): Int = books.count()
+    override fun getItemCount(): Int = books.size
 
     class BooksViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
