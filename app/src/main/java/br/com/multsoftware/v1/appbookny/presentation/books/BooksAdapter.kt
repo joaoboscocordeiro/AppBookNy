@@ -28,9 +28,12 @@ class BooksAdapter(
 
     class BooksViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
+        private val title = itemView.text_title
+        private val author = itemView.text_author
+
         fun bindView(book: Book) {
-            itemView.text_title.text = book.title
-            itemView.text_author.text = book.author
+            title.text = book.title
+            author.text = book.author
         }
     }
 }
