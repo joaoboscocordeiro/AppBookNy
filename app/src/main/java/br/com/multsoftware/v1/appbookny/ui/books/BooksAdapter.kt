@@ -1,11 +1,11 @@
-package br.com.multsoftware.v1.appbookny.presentation.books
+package br.com.multsoftware.v1.appbookny.ui.books
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.multsoftware.v1.appbookny.R
-import br.com.multsoftware.v1.appbookny.data.model.Book
+import br.com.multsoftware.v1.appbookny.domain.model.Book
 import kotlinx.android.synthetic.main.item_book.view.*
 
 /**

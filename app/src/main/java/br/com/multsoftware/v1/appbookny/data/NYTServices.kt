@@ -1,6 +1,6 @@
 package br.com.multsoftware.v1.appbookny.data
 
-import br.com.multsoftware.v1.appbookny.data.response.BookBodyResponse
+import br.com.multsoftware.v1.appbookny.response.BookBodyResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

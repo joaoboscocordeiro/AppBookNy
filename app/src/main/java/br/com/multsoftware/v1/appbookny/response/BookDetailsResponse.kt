@@ -1,4 +1,4 @@
-package br.com.multsoftware.v1.appbookny.data.response
+package br.com.multsoftware.v1.appbookny.response
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass

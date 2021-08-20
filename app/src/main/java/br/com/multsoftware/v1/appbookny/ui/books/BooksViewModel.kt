@@ -1,13 +1,8 @@
-package br.com.multsoftware.v1.appbookny.presentation.books
+package br.com.multsoftware.v1.appbookny.ui.books
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import br.com.multsoftware.v1.appbookny.data.ApiService
-import br.com.multsoftware.v1.appbookny.data.model.Book
-import br.com.multsoftware.v1.appbookny.data.response.BookBodyResponse
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import br.com.multsoftware.v1.appbookny.domain.model.Book
 
 /**
  * Created by João Bosco on 14/08/2021.

@@ -1,4 +1,4 @@
-package br.com.multsoftware.v1.appbookny.data.model
+package br.com.multsoftware.v1.appbookny.domain.model
 
 /**
  * Created by João Bosco on 14/08/2021.
