@@ -2,7 +2,9 @@ package br.com.multsoftware.v1.appbookny.ui.books
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import br.com.multsoftware.v1.appbookny.data.ApiService
 import br.com.multsoftware.v1.appbookny.domain.model.Book
+import br.com.multsoftware.v1.appbookny.response.BookBodyResponse
 
 /**
  * Created by João Bosco on 14/08/2021.
@@ -14,6 +16,9 @@ class BooksViewModel : ViewModel() {
 
     fun getBooks() {
         //booksLiveData.value = createFakeBooks()
+        ApiService.service.getBooks().enqueue(object: Callback<BookBodyResponse> {
+
+        })
     }
 
     // Moke
