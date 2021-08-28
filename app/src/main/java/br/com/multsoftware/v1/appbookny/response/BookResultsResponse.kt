@@ -11,5 +11,5 @@ import java.util.*
 @JsonClass(generateAdapter = true)
 data class BookResultsResponse(
     @Json(name = "book_details")
-    val bookDetailResponses: List<BookDetailsResponse>
+    val bookDetailResponse: List<BookDetailsResponse>
 )

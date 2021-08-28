@@ -20,18 +20,15 @@ class BooksViewModel : ViewModel() {
     fun getBooks() {
         ApiService.service.getBooks().enqueue(object : Callback<BookBodyResponse> {
 
-            override fun onResponse(
-                call: Call<BookBodyResponse>,
-                response: Response<BookBodyResponse>
-            ) {
+            override fun onResponse(call: Call<BookBodyResponse>, response: Response<BookBodyResponse>) {
                 if (response.isSuccessful) {
-                    val books: MultableList<Book> = mutableListOf()
+                    val books: MutableList<Book> = mutableListOf()
 
                     response.body()?.let { bookBodyResponse ->
                         for (result in bookBodyResponse.bookResults) {
                             val book = Book(
-                                title = result.bookDetailsResponse[0].title,
-                                author = result.bookDetailsResponse[0].author
+                                title = result.bookDetailResponse[0].title,
+                                author = result.bookDetailResponse[0].author
                             )
 
                             books.add(book)
