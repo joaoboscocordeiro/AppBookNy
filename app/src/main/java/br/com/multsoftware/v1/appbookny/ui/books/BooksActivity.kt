@@ -1,23 +1,23 @@
 package br.com.multsoftware.v1.appbookny.ui.books
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.com.multsoftware.v1.appbookny.R
-import br.com.multsoftware.v1.appbookny.domain.model.Book
+import br.com.multsoftware.v1.appbookny.ui.base.BaseActivity
+import br.com.multsoftware.v1.appbookny.ui.details.BookDetailsActivity
 import kotlinx.android.synthetic.main.activity_books.*
+import kotlinx.android.synthetic.main.toolbar.*
 
-class BooksActivity : AppCompatActivity() {
+class BooksActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_books)
 
-        toolbar.title = getString(R.string.books_title)
-        setSupportActionBar(toolbar)
+        setupToolbar(toolbarMain, R.string.books_title)
 
         val viewModel: BooksViewModel = ViewModelProviders.of(this).get(BooksViewModel::class.java)
 
