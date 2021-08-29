@@ -27,7 +27,9 @@ class BooksActivity : AppCompatActivity() {
                     layoutManager =
                         LinearLayoutManager(this@BooksActivity, RecyclerView.VERTICAL, false)
                     setHasFixedSize(true)
-                    adapter = BooksAdapter(books)
+                    adapter = BooksAdapter(books) { book ->
+
+                    }
                 }
             }
         })
