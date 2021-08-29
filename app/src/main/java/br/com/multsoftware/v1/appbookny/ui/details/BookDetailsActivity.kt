@@ -7,6 +7,9 @@ class BookDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book_details)
+
+        book_detail_title.text = intent.getStringExtra(EXTRA_TITLE)
+        book_detail_description.text = intent.getStringExtra(EXTRA_DESCRIPTION)
     }
 
     companion object {
