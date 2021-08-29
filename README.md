@@ -7,5 +7,6 @@ New Book Best Sellers Lists and lookup book reviews.
 #### 3 - LiveData
 #### 4 - Coroutines
 #### 5 - Retrofit
+#### 6 - Moshi
 
 --------------------------------------------------------------------------------------------------------------------
