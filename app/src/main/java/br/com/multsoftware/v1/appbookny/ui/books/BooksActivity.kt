@@ -35,6 +35,16 @@ class BooksActivity : BaseActivity() {
             }
         })
 
+        viewModel.viewFlipperLiveData.observe(this, Observer {
+            it?.let { viewFlipper ->
+                view_flipper_books.displayedChild = viewFlipper.first
+
+                viewFlipper.second?.let { errorMessageResId ->
+                    text_view_error.text = getString(errorMessageResId)
+                }
+            }
+        })
+
         viewModel.getBooks()
     }
 }

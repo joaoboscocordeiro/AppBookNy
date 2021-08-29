@@ -4,7 +4,6 @@ import br.com.multsoftware.v1.appbookny.response.BookBodyResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
-import java.util.*
 
 /**
  * Created by João Bosco on 14/08/2021.
