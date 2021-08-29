@@ -1,4 +1,4 @@
-   package br.com.multsoftware.v1.appbookny.ui.books
+package br.com.multsoftware.v1.appbookny.ui.books
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +28,8 @@ class BooksActivity : AppCompatActivity() {
                         LinearLayoutManager(this@BooksActivity, RecyclerView.VERTICAL, false)
                     setHasFixedSize(true)
                     adapter = BooksAdapter(books) { book ->
-
+                        val intent = BookDetailsActivity.getStartIntent(this@BooksActivity, book.title, book.description)
+                        this@BooksActivity.startActivity(intent)
                     }
                 }
             }
